@@ -1,4 +1,4 @@
-Substrate/PolkaDOT Prometheus scrapper with curl and custom logging to the journaled system to receive the metrics in Grafana with Promntail.
+Substrate/PolkaDOT Prometheus scrapper with curl and custom logging to the journaled system to receive the metrics in Grafana with Promntail including new or changed fields. 
 
 ### A monitoring service on Grafana Cloud, Loki, Promtail, CURL ###
 * No need to install Grafana
