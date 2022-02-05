@@ -13,6 +13,7 @@ Substrate/PolkaDOT Prometheus scrapper with curl and custom logging to the journ
 ---
 ## installation
 * Create a bash script in "/usr/sbin/" and paste the code below, you can modify the scrapping time at ```sleep 15```
+* Control what is logged to journald grep commnad at ```grep -v '#' | grep '_count'```
 * Change <PORT> inside the script with your Substrate/Polkadio Prometheus PORT
 * http://localhost:<PORT>/metrics
 * Or run polkadot daemon with a custom one by adding prometheus flags to your configuration file
