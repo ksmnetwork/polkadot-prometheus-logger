@@ -124,6 +124,20 @@ scrape_configs:
 ```
 {unit="metrics.service"} | regexp "(?P<metric>^[a-zA-Z0-9_]+)(?P<json>\\{([^}]+)\\})\\W(?P<counter>[0-9]+)"
 ```
+* Filtering on the queries with exact matching or regex
+```
+|= "polkadot_"
+```
+```
+|= "substrate_"
+```
+```
+|~ "substrate_.*kademlia"
+```
+* Example
+```
+{unit="metrics.service"} | regexp "(?P<metric>^[a-zA-Z0-9_]+)(?P<json>\\{([^}]+)\\})\\W(?P<counter>[0-9]+)" |~ "substrate_.*kademlia"
+```
 
 ### Dashboard download link, Granaba.com###
 [Download link](https://grafana.com/grafana/dashboards/15674)
